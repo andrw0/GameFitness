@@ -9,5 +9,7 @@
 
 The project team comprises of 3 (smart) members. Information can be found on the details here. 
 
+# Technologies Used
 
+We plan to use Python to create business logic, Javascript (as a UI) and SQlite as an open source database to storing information. 
  
