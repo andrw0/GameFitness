@@ -1,5 +1,5 @@
-# What is GameFitness?
-  Software project that recommends exercises based on sports activities to keep you healthy and ready for the game.
+# What is Game Fitness?
+ Application that recommends exercises based on sports activities to keep you healthy and ready for the game.
 
 # Concept
   The idea of the application is primarily to create a profile for a user and pick a sports activity or multiple and based on his personal height, weight and BMI, provide a list of suggested exercies by cateogeries (stretching, strenght training etc.). The user can then perform this exercies for a certain period and provide more inputs on changes to his weight, BMI and other parameters.
@@ -14,9 +14,10 @@ The project team comprises of 3 (smart) members. As this is a small team, all of
 
 This is a progressive team and we collaborate distributively using Git issues as can be seen in our estimates interaction.
 
-# Project StakeHolder
+# Project StakeHolder(s)
 
-Currently we have one stakeholder which is our Professor Wallace Chipidza.
+- Professor Wallace Chipidza
+- Atheletes, Team Game Players
  
 # Project Requirements (from stakeholders
 
