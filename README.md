@@ -28,5 +28,8 @@ This is a progressive team and we collaborate distributively using Git issues as
  
 # Technologies Used
 
-We plan to use Python to create business logic, Javascript (as a UI) and SQlite as an open source database to storing information. 
+We plan to use 
+- Python : For Algorithms and business logic
+- HTML, CSS, Javascript (along with a framework which we haven't picked yet ) : UI components/visualization
+- SQlite : Database Engine/Data store
  
