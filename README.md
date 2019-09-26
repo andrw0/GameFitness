@@ -19,12 +19,12 @@ This is a progressive team and we collaborate distributively using Git issues as
 - Professor Wallace Chipidza
 - Atheletes, Team Game Players
  
-# Project Requirements (from stakeholders
+# Project Requirements
 
-Build an application which provides customized/personolized list of exercises for a user based on his personal preferences and traits.
-The application should be able to track progress of the user traits and provide a visualize representation of the history of changes
-The application should also be able to categorize exercises (general cardio training vs swimming/running as options)
-Provide a guided tutorial/video/link to perform exercises 
+- Build an application which provides customized/personolized list of exercises for a user based on his personal preferences and traits.
+- The application should be able to track progress of the user traits and provide a visualize representation of the history of changes
+- The application should also be able to categorize exercises (general cardio training vs swimming/running as options)
+- Provide a guided tutorial/video/link to perform exercises 
  
 # Technologies Used
 
