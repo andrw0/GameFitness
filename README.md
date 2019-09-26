@@ -12,6 +12,8 @@ The project team comprises of 3 (smart) members. As this is a small team, all of
 - Abdulmajeed Mesefir (Lead QA/Developer/StakeHolder Meet up)
 - Shankar Chandrasekaran (Scrum Master/Developer/Tester)
 
+This is a progressive team and we collaborate distributively using Git issues as can be seen in our estimates interaction.
+
 # Project StakeHolder
 
 Currently we have one stakeholder which is our Professor Wallace Chipidza.
