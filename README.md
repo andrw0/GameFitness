@@ -17,7 +17,7 @@ This is a progressive team and we collaborate distributively using Git issues as
 # Project StakeHolder(s)
 
 - Professor Wallace Chipidza
-- Atheletes, Team Game Players
+- Atheletes, Sports Enthusiast
  
 # Project Requirements
 
