@@ -8,9 +8,9 @@
 
 The project team comprises of 3 (smart) members. As this is a small team, all of us plan to support all the different work (PO, Scrum Master, DEV, TESTING, Stake holder meet ups etc. at some point in the project).
 
-Andrew Shults (Product Owner/Lead Developer)
-Abdulmajeed Mesefir (Lead QA)
-Shankar Chandrasekaran (Scrum Master/Developer/Tester)
+- Andrew Shults (Product Owner/Lead Developer)
+- Abdulmajeed Mesefir (Lead QA)
+- Shankar Chandrasekaran (Scrum Master/Developer/Tester)
 
 # Project StakeHolder
 
