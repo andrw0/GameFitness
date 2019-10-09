@@ -32,4 +32,14 @@ We plan to use
 - Python : For Algorithms and business logic
 - HTML, CSS, Javascript (along with a framework which we haven't picked yet ) : UI components/visualization
 - SQlite : Database Engine/Data store
+
+# Scrum Meetings/Discussion Page
+ 
+ Scrum Board(Zenhub board): https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147
+ 
+ # Burndown Chart
+ 
+ Burndown Charts are available as part of Zenhub app (here)[https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340]
+ 
+ 
  
