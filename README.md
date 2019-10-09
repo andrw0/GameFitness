@@ -33,6 +33,10 @@ We plan to use
 - HTML, CSS, Javascript (along with a framework which we haven't picked yet ) : UI components/visualization
 - SQlite : Database Engine/Data store
 
+
+## Agile Planning Section
+
+
 # Scrum Meetings/Discussion Page
  
  Scrum Board(Zenhub board): https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147
