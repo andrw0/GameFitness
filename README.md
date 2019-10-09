@@ -34,16 +34,26 @@ We plan to use
 - SQlite : Database Engine/Data store
 
 
-## Agile Planning Section
+# Agile Planning Section
+
+## Project Milestones and Iterations
+
+#### Project will have 2 Milestones each comprising of 2 Iterations (duration of  2 weeks) and 1 Stabilization week inbetween them ####
+
+### [Milestone 1 (Release)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?releases=5d9e616fcec9b500015b5b1a&repos=210957147) 
+
+### [Milestone 2  (Release)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?releases=5d9e61a0cec9b500015b5b1d&repos=210957147)
 
 
-# Scrum Meetings/Discussion Page
+## Scrum Meetings/Discussion Page
  
- Scrum Board(Zenhub board): https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147
+ [Scrum Board(Zenhub board)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147)
  
- # Burndown Chart
+ ## [Burndown Chart](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340)
  
- Burndown Charts are available as part of Zenhub app (here)[https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340]
+ A snapshot of the burndown can be seen below:
+ 
+ 
  
  
  
