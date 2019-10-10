@@ -87,10 +87,11 @@ Issues identified
  Work for Milestone1 : 12 days
  
  
- 
  ## [Burndown Chart](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340)
  
  A snapshot of the burndown can be seen below:
+ 
+ ![Scrum Board Image ]("https://github.com/shankarchandru/GameFitness/blob/master/RepoFiles/ScrumBoard.jpg")
  
  
  
