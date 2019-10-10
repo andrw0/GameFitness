@@ -81,9 +81,7 @@ Issues identified
  
  [Scrum Board(Zenhub board)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147)
  
- ## Velocity - Milestone 1 (30%)
- 
- ## Velocity - Milestone 2 (40%)
+ ## Velocity - Milestone 1 (50%) (12 days)
  
  
  
