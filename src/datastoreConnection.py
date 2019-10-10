@@ -26,9 +26,11 @@ def select_all_users(conn):
     cur.execute("SELECT * FROM users")
  
     rows = cur.fetchall()
- 
+    count = 0
     for row in rows:
+        count = count +1
         print(row)
+    return count   
 
 
 def main():
@@ -37,10 +39,7 @@ def main():
     # create a database connection
     conn = create_connection(database)
     with conn:
-        print("1. Query task by priority:")
-        select_task_by_priority(conn, 1)
- 
-        print("2. Query all tasks")
+        print("2. Query all users")
         select_all_tasks(conn)
  
  
