@@ -81,7 +81,10 @@ Issues identified
  
  [Scrum Board(Zenhub board)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147)
  
- ## Velocity - Milestone 1 (50%) (12 days)
+ ## Velocity - Milestone 1 (40%)
+ Total Days for Milestone1 : 30 
+ Total Days for Milestone1 ( by velocity) : 12 days
+ Work for Milestone1 : 12 days
  
  
  
