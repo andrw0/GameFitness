@@ -78,8 +78,12 @@ Issues identified
   
   - Monday 12-12:30 PM (30 minutes)
   - Thursday 12-12:30 PM (30 minutes)
+  
+  ![A snapshot of Scrum Stand up Calendar](https://github.com/shankarchandru/GameFitness/blob/master/RepoFiles/ScrumMeeting-CalendarSnapshot.jpg "Stand Up Meetings Calendar")
  
  [Scrum Board(Zenhub board)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147)
+ 
+ ![A Snapshot of Scrum Board](https://github.com/shankarchandru/GameFitness/blob/master/RepoFiles/ScrumBoard.jpg "Scrum Zenhub board")
  
  ## Velocity - Milestone 1 (40%)
  Total Days for Milestone1 : 30 
