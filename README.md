@@ -91,7 +91,7 @@ Issues identified
  
  A snapshot of the burndown can be seen below:
  
- ![Scrum Board Image ]("https://github.com/shankarchandru/GameFitness/blob/master/RepoFiles/ScrumBoard.jpg")
+ ![Scrum Board Image ][https://github.com/shankarchandru/GameFitness/blob/master/RepoFiles/ScrumBoard.jpg "Scrum Board Snapshot"]
  
  
  
