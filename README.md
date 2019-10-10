@@ -51,12 +51,12 @@ Milestone 1 will be addressing the following parts of the application
 
 Issues identified
 
-1. [Support User enrollment](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/12)
-2. [Support admin user input](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/13)
-3. [User login and modify profile](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/11)
-4. [Decide which sports to include](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/5)
-5. [Identify common injuries and exercies by sport](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/6)
-6. [Python functions to support connection to sqlite database](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/9)
+1. [Support User enrollment(3)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/12)
+2. [Support admin user input(3)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/13)
+3. [User login and modify profile(5)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/11)
+4. [Decide which sports to include(1)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/5)
+5. [Identify common injuries and exercies by sport(1)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/6)
+6. [Python functions to support connection to sqlite database(1)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/9)
 
 
 ### [Milestone 2  (Release)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?releases=5d9e61a0cec9b500015b5b1d&repos=210957147)
@@ -73,7 +73,19 @@ Issues identified
 
 ## Scrum Meetings/Discussion Page
  
+ ## Scrum Stand Up Meetings
+  The stand ups are weekly 2 times
+  
+  - Monday 12-12:30 PM (30 minutes)
+  - Thursday 12-12:30 PM (30 minutes)
+ 
  [Scrum Board(Zenhub board)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?repos=210957147)
+ 
+ ## Velocity - Milestone 1 (30%)
+ 
+ ## Velocity - Milestone 2 (40%)
+ 
+ 
  
  ## [Burndown Chart](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340)
  
