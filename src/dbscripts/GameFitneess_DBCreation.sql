@@ -1,5 +1,3 @@
-
---
 PRAGMA foreign_keys = off;
 BEGIN TRANSACTION;
 
