@@ -1,6 +1,3 @@
-PRAGMA foreign_keys = off;
-BEGIN TRANSACTION;
-
 -- Table: USERS
 DROP TABLE IF EXISTS users;
 
@@ -21,9 +18,10 @@ CREATE TABLE IF NOT EXISTS users (
 DROP TABLE IF EXISTS levels;
 
 CREATE TABLE IF NOT EXISTS levels (
-    level_id	 TEXT PRIMARY KEY,
-	level_name   TEXT NOT NULL,
-	level 
+    level_id	      TEXT PRIMARY KEY,
+	level_name        TEXT NOT NULL,
+	level_description TEXT
+);
 
 -- Table: GAMES
 DROP TABLE IF EXISTS games;
@@ -43,15 +41,15 @@ CREATE TABLE IF NOT EXISTS injuries (
 	injury_name  TEXT, 
 	game_id	     TEXT,
     description  TEXT,
-    body_part    TEXT NOT NULL
-	PRIMARY_KEY (injury_id,game_id)
+    body_part    TEXT NOT NULL,
+	PRIMARY KEY (injury_id,game_id)
 );
 
 -- Table: EXERCISES
 DROP TABLE IF EXISTS exercises;
 
 CREATE TABLE IF NOT EXISTS exercises (
-    exercise_id     TEXT PRIMARY_KEY, 
+    exercise_id     TEXT PRIMARY KEY, 
 	body_category   TEXT, 
 	weight_level_id	TEXT,
     description     TEXT,
@@ -66,8 +64,6 @@ CREATE TABLE IF NOT EXISTS weight_levels (
 	weights_percentage TEXT, 
 	level_id        TEXT,
     description     TEXT,
-    body_part    TEXT NOT NULL
-	PRIMARY_KEY (weight_level_id,level_id)
+    body_part    TEXT NOT NULL,
+	PRIMARY KEY (weight_level_id,level_id)
 );
-
-PRAGMA foreign_keys = on;
