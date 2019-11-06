@@ -1,0 +1,10 @@
+{% block title %} PUT SPORTS NAME HERE {% endblock %}
+{% block content %}
+Create Page
+
+<form method="get" action="/URL REDIRECT GOES HERE/">
+  {% csrf_token %}
+  {{form.as_p}}
+  <button type="submit", name="save">submit</button>
+</form>
+{% endblock %}
