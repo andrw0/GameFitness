@@ -18,18 +18,6 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('about/', views.about),
-    path('signin/', views.signin),
-    path('createaccount/', views.createaccount),
-    path('contactus/', views.contactus),
+    path('signin/', views.get_userForm),
     path('', views.homepage),
-
-]
-
-from django.urls import include, path
-
-urlpatterns = [
-    path('ExerciseList/', include('ExerciseList.urls')),
-    path('admin/', admin.site.urls),
 ]
