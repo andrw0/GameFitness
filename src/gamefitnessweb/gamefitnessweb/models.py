@@ -14,15 +14,27 @@ class users(models.Model):
     GAME_CHOICES = (('Tennis','tennis'),('Golf','golf'),('Soccer','soccer'),('Basketball','basketball'),('Baseball','baseball'),('Football','football'),('Badminton','badminton'),('Volleyball','volleyball'))
     game_id = models.CharField(choices=GAME_CHOICES,max_length=50)
 
+    class Meta:
+        db_table = 'users'
+        managed = True
+
 class games(models.Model):
     GAME_CHOICES = (('Tennis','tennis'),('Golf','golf'),('Soccer','soccer'),('Basketball','basketball'),('Baseball','baseball'),('Football','football'),('Badminton','badminton'),('Volleyball','volleyball'))
     game_id = models.CharField(choices=GAME_CHOICES,max_length=50)
 
+    class Meta:
+        db_table = 'games'
+        managed = True
+
 class exercises(models.Model):
-    games = models.ForeignKey(games, on_delete=models.CASCADE)
+    game_id = models.ForeignKey(games, on_delete=models.CASCADE)
     INJURY_LIST = (('shoulder, back, knee', "tennis"), ('elbow, wrist, shoulder, lumbar', 'golf'), ('ankle, knee', 'soccer'), ('ankle, knee', 'basketball'), ('knee, shoulder', 'baseball'), ('knee, ankle', 'badminton'), ('ankle, shoulder, back', 'volleyball'))
     bodypart = models.CharField(choices=INJURY_LIST, max_length=50)
     exercise_list = models.CharField(max_length=300)
     reps = models.CharField(max_length=300)
     video_link = models.CharField(max_length=500)
     body_part = models.CharField(max_length=50)
+
+    class Meta:
+        db_table = 'exercises'
+        managed = True
