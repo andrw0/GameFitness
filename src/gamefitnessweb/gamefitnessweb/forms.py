@@ -4,9 +4,10 @@ from .models import users, games, exercises
 
 # Create the form class
 class UserForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
         model = users
-        fields = ['password','first_name','last_name','email_address','height','weight','gender']
+        fields = ['first_name','last_name','email_address','password','height','weight','gender']
         exclude = ['game_id']
 
 class GameForm(forms.ModelForm):
