@@ -29,8 +29,8 @@ This is a progressive team and we collaborate distributively using Git issues as
 # Technologies Used
 
 We plan to use 
-- Python : For Algorithms and business logic
-- HTML, CSS, Javascript (along with a framework which we haven't picked yet ) : UI components/visualization
+- Python : Building Business logic and MVC architecture based web framework
+- Django web framework, HTML, CSS, Javascript : UI components/visualization
 - SQlite : Database Engine/Data store
 
 
@@ -57,6 +57,18 @@ Issues identified
 4. [Decide which sports to include(1)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/5)
 5. [Identify common injuries and exercies by sport(1)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/6)
 6. [Python functions to support connection to sqlite database(1)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/issues/shankarchandru/gamefitness/9)
+
+## Milestone 1 Artifacts
+- ### [Milestone 1 Presentation](https://github.com/shankarchandru/GameFitness/blob/master/Artifacts/SoftwareDevelopment_GameFitness-Milestone1.pptx)
+- ### Milestone Summary
+     - User SignIn/Enrollment Page and submission
+     - Collect exercises and common sport injuries for 10 common games/sports
+     - Document exercises and categories based on difficulty levels
+     - Create Django web framework to support building web pages based on MVC pattern of Models - Controller - Views
+     - Building Models for Users, Games, Exercises
+     - Building Controllers(views.py) to visualize using Views (forms.py) to submit content
+     - Design database tables and columns (scripts/Django models) for storing Games, Users, Exercies info into SQlite DB
+     - Build pytest for Models created/available for pytest
 
 
 ### [Milestone 2  (Release)](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/board?releases=5d9e61a0cec9b500015b5b1d&repos=210957147)
@@ -96,6 +108,8 @@ Issues identified
  A snapshot of the burndown can be seen below:
  
  ![Scrum Board](https://github.com/shankarchandru/GameFitness/blob/master/RepoFiles/ScrumBoard.jpg "Scrum Board")
+ 
+ 
  
  
  
