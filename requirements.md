@@ -27,11 +27,18 @@ Key features: login to the webside, store user login information
     b. create a virtual environment (Mac and Linux: "python3 -m venv env", Windows: "python -venv env")
     c. activate virtual enviornment (Mac and Linux: "source env/bin/activate", Windows: ".\env\Scripts\activate")  
 6. on the command line interface, install pytest ("pip install pytest")
-7. on the command line interface, install django (:pip install django")
+7. on the command line interface, install django ("pip install django")
 8. On the command line interface, navigate into the folder containing the manage.py file
 9. on the command line interface, type "python manage.py runserver". This should now allow you to run the website on your local machine 
 10. open up a web browser and type "http://localhost:8000/"
 11. the website should now be loaded and running on your local machine!
+    
+**User Doc**
+1. After running django, open up your web browers and type "http://localhost:8000/". This will take you to the homepage
+2. On the homepage, navigate to the top right hand corner and click on the login icon (it is an image of a stickfigure head and body)
+3. Click on sign in and you will be redireced to a sign in page
+4. Fill out the sign in critera and submit your information. You will be redirected to a page where you can choose a sport 
+5. After clicking on a sport, you will be redirected to the exercises page, which will contain the exercises you will complete
     
 
 
