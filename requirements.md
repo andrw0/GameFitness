@@ -27,12 +27,13 @@ Key features: login to the webside, store user login information
     b. create a virtual environment (Mac and Linux: "python3 -m venv env", Windows: "python -venv env")
     c. activate virtual enviornment (Mac and Linux: "source env/bin/activate", Windows: ".\env\Scripts\activate")  
 6. on the command line interface, install pytest ("pip install pytest")
-7. on the command line interface, install pytest-django ("pip install pytest-django")
-8. on the command line interface, install django ("pip install django")
-9. On the command line interface, navigate into the folder containing the manage.py file
-10. on the command line interface, type "python manage.py runserver". This should now allow you to run the website on your local machine
-11. open up a web browser and type "http://localhost:8000/"
-12. the website should now be loaded and running on your local machine!
+7. on the command line interface, install django ("pip install django")
+8. on the command line interface, install pytest-django ("pip install pytest-django")
+9. on the command line interface, install django ("pip install mixer")
+10. On the command line interface, navigate into the folder containing the manage.py file
+11. on the command line interface, type "python manage.py runserver". This should now allow you to run the website on your local machine
+12. open up a web browser and type "http://localhost:8000/"
+13. the website should now be loaded and running on your local machine!
 
 **User Doc**
 1. After running django, open up your web browers and type "http://localhost:8000/". This will take you to the homepage
