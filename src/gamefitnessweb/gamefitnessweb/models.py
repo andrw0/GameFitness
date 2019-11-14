@@ -33,3 +33,9 @@ class exercises(models.Model):
     reps = models.CharField(max_length=300)
     video_link = models.CharField(max_length=500)
     body_part = models.CharField(max_length=50)
+
+class feedback(models.Model):
+    class Meta:
+        db_table = "feedback"
+    RPE_CHOICES = (('0', '0 = no activity'), ('1', '1 = very easy'), ('2', '2 = easy'), ('3', '3 = moderate'), ('4', '4 = somewhat hard'), ('5', '5 = hard'), ('6', '6 = very hard'), ('7', '7 = maximal'))
+    rate_of_percieved_exertion = models.CharField(choices=RPE_CHOICES,max_length=50)
