@@ -41,3 +41,6 @@ Key features: login to the webside, store user login information
 3. Click on sign in and you will be redireced to a sign in page
 4. Fill out the sign in critera and submit your information. You will be redirected to a page where you can choose a sport
 5. After clicking on a sport, you will be redirected to the exercises page, which will contain the exercises you will complete
+
+** Test Doc**
+1. After configuring pytest for django plugin and mixer plugin as part of Functional Requirements Instructions, all tests for the project can be navigated to gamefitnessweb/gamefitnessweb and invoked by calling pytest
