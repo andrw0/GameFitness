@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import users, games, exercises
+from .models import users, games, exercises, feedback
 
 # Create the form class
 class UserForm(forms.ModelForm):
@@ -20,3 +20,8 @@ class ExercisesForm(forms.ModelForm):
     class Meta:
         model = exercises
         fields = ['game_id','bodypart','exercise_list','reps','video_link','body_part']
+
+class FeedbackForm(forms.ModelForm):
+    class Meta:
+        model = feedback
+        fields = ['rate_of_percieved_exertion']
