@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from django.shortcuts import render
-from .forms import UserForm, GameForm, ExercisesForm
+from .forms import UserForm, GameForm, ExercisesForm, FeedbackForm
 
 def showUserForm(request):
     # if this is a POST request we need to process the form data
@@ -62,3 +62,13 @@ def showExercisesForm(request):
         form = ExercisesForm()
 
     return render(request, './gamefitnessweb/exercisesList.html', {'form': form})
+
+def showFeedbackForm(request):
+    if request.method == 'POST':
+        form = FeedbackForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('../')
+    else:
+        form = FeedbackForm()
+    return render(request, './gamefitnessweb/feedback.html', {'form': form})
