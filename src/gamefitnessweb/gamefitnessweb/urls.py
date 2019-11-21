@@ -22,4 +22,5 @@ urlpatterns = [
     path('games/',views.showGameForm, name='games'),
     path('exercisesList/',views.showExercisesForm, name='exercisesList'),
     path('', views.homepage),
+    path('feedback/', views.showFeedbackForm, name='feedback'),
 ]
