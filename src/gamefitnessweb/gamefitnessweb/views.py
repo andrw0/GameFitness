@@ -28,7 +28,7 @@ def homepage(request):
 
 def showGameForm(request):
     form = GameForm()
-    game = games.objects.all()
+    game = games.objects.values("game_id")
     args = {'form': form, 'game':game}
     # # if this is a POST request we need to process the form data
     # if request.method == 'POST':
@@ -49,23 +49,26 @@ def showGameForm(request):
     return render(request, './gamefitnessweb/games.html', args)
 
 def showExercisesForm(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = ExercisesForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            form.save()
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponse("Thank You")
+    form = GameForm()
+    game = games.objects.values('game_id')
+    args = {'form':form, 'game':game}
+    # # if this is a POST request we need to process the form data
+    # if request.method == 'POST':
+    #     # create a form instance and populate it with data from the request:
+    #     form = ExercisesForm(request.POST)
+    #     # check whether it's valid:
+    #     if form.is_valid():
+    #         form.save()
+    #         # process the data in form.cleaned_data as required
+    #         # ...
+    #         # redirect to a new URL:
+    #         return HttpResponse("Thank You")
+    #
+    # # if a GET (or any other method) we'll create a blank form
+    # else:
+    #     form = ExercisesForm()
 
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = ExercisesForm()
-
-    return render(request, './gamefitnessweb/exercisesList.html', {'form': form})
+    return render(request, './gamefitnessweb/exercisesList.html', args)
 
 def showFeedbackForm(request):
     if request.method == 'POST':
