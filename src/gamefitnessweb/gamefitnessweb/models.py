@@ -1,15 +1,11 @@
 from django.db import models
-
+from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
-class users(models.Model):
+class users(AbstractUser):
 
     class Meta:
         db_table = "users"
-    first_name = models.CharField(max_length=200)
-    last_name = models.CharField(max_length=200)
-    email_address = models.EmailField(max_length=200)
-    password = models.CharField(max_length=200)
     height = models.DecimalField(max_digits=5,decimal_places=2)
     weight = models.DecimalField(max_digits=5,decimal_places=2)
     GENDER_CHOICES = (('M', 'Male'), ('F', 'Female'))
