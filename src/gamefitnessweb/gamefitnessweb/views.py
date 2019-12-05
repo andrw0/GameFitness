@@ -2,66 +2,70 @@ from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from django.shortcuts import render
 from .forms import UserForm, GameForm, ExercisesForm, FeedbackForm
+from .models import games, exercises
+from django.contrib.auth import authenticate
+from django.views.generic.edit import FormView
 
-def showUserForm(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = UserForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            form.save()
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect('../')
+class showUserForm(FormView):
+    template_name= 'signin.html'
+    form_class = UserForm
+    success_url = 'homepage.html'
 
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = UserForm()
+    def form_valid(self,form):
+        form.save()
 
-    return render(request, './gamefitnessweb/signin.html', {'form': form})
+    def form_invalid(self, form):
+        return HttpResponseRedirect('../homepage')
+
+    # def get(self, form):
+    # # if this is a POST request we need to process the form data
+    #     if self.request.method == 'POST':
+    #     # create a form instance and populate it with data from the request:
+    #         form = UserForm(request.POST)
+    #     # check whether it's valid:
+    #         if form.is_valid():
+    #             form.save()
+    #         # process the data in form.cleaned_data as required
+    #         # ...
+    #         # redirect to a new URL:
+    #         return HttpResponseRedirect('../')
+    #
+    # # if a GET (or any other method) we'll create a blank form
+    #     else:
+    #         form = UserForm()
+    #
+    #         return render(request, './gamefitnessweb/signin.html', {'form': form})
 
 def homepage(request):
-    return render(request,'./gamefitnessweb/homepage.html')
+    return render(request,'homepage.html')
 
 def showGameForm(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = GameForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            form.save()
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponse("Thank You")
-
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = GameForm()
-
-    return render(request, './gamefitnessweb/games.html', {'form': form})
+    form = GameForm()
+    game = games.objects.all()
+    args = {'form': form, 'game':game}
+    return render(request, 'games.html', args)
 
 def showExercisesForm(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = ExercisesForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            form.save()
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponse("Thank You")
+    form = GameForm()
+    game = games.objects.values('game_id')
+    args = {'form':form, 'game':game}
+    # # if this is a POST request we need to process the form data
+    # if request.method == 'POST':
+    #     # create a form instance and populate it with data from the request:
+    #     form = ExercisesForm(request.POST)
+    #     # check whether it's valid:
+    #     if form.is_valid():
+    #         form.save()
+    #         # process the data in form.cleaned_data as required
+    #         # ...
+    #         # redirect to a new URL:
+    #         return HttpResponse("Thank You")
+    #
+    # # if a GET (or any other method) we'll create a blank form
+    # else:
+    #     form = ExercisesForm()
 
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = ExercisesForm()
-
-    return render(request, './gamefitnessweb/exercisesList.html', {'form': form})
+    return render(request, 'exercises.html', args)
 
 def showFeedbackForm(request):
     if request.method == 'POST':
@@ -71,4 +75,16 @@ def showFeedbackForm(request):
             return HttpResponseRedirect('../')
     else:
         form = FeedbackForm()
-    return render(request, './gamefitnessweb/feedback.html', {'form': form})
+    return render(request, 'feedback.html', {'form': form})
+
+
+def auth_view(request):
+    username = request.POST.get('email_address', '')
+    password = request.POST.get('password', '')
+    user = auth.authenticate(email_address = email_address, password = password)
+
+    if user is not None:
+        auth.login(request, user)
+        return HttpResponseRedirect('games.html')
+    else:
+        return HttpResponseRedirect('homepage.html')

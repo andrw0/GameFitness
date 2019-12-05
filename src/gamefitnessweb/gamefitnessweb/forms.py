@@ -1,14 +1,22 @@
 from django import forms
 from django.forms import ModelForm
 from .models import users, games, exercises, feedback
-
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 # Create the form class
-class UserForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput)
+class UserForm(UserCreationForm):
+    # password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
         model = users
-        fields = ['first_name','last_name','email_address','password','height','weight','gender']
+        fields = ['username','first_name','last_name','email','height','weight','gender']
         exclude = ['game_id']
+
+class UserChangeForm(UserChangeForm):
+    # password = forms.CharField(widget=forms.PasswordInput)
+    class Meta:
+        model = users
+        fields = ['username','first_name','last_name','email','height','weight','gender']
+        exclude = ['game_id']
+
 
 class GameForm(forms.ModelForm):
     class Meta:
