@@ -17,6 +17,8 @@ class showUserForm(FormView):
     def form_invalid(self, form):
         return HttpResponseRedirect('../homepage')
 
+
+
     # def get(self, form):
     # # if this is a POST request we need to process the form data
     #     if self.request.method == 'POST':

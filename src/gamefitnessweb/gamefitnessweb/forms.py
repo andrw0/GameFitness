@@ -14,7 +14,7 @@ class UserChangeForm(UserChangeForm):
     # password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
         model = users
-        fields = ['username','first_name','last_name','email','height','weight','gender']
+        fields = ['username','email']
         exclude = ['game_id']
 
 
