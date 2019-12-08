@@ -56,7 +56,8 @@ ROOT_URLCONF = 'gamefitnessweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['./gamefitnessweb/templates/registration', './gamefitnessweb/templates/gamefitnessweb','gamefitnessweb','templates'],
+        'DIRS':['./gamefitnessweb/templates/registration',
+        './gamefitnessweb/templates/gamefitnessweb'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -2,14 +2,18 @@
 <form action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
+
+<form action = "exercisesList.html" method="get">
 <table>
     <tr>
-        <th>games</th>
+        <th>choose your game:</th>
     </tr>
     {% for game in game %}
     <tr>
-        <td>{{ game.game_id }}</td>
+        <td>{{ game.game_id }}
+        <input type="radio"></td>
     </tr>
     {% endfor %}
 </table>
+  <input type = "submit">
 </form>
