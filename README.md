@@ -1,11 +1,11 @@
 # How to run GameFitness
-# Environment requirements 
+## Environment requirements 
 
 - Python 3.7
 - Pip 19.2.3
 - Django 2.2
 
-***running the application***
+## running the application
 
 - navigate to the program root folder 
 
@@ -46,7 +46,7 @@ You will know if you are in the virtual environment if you have (env) to the lef
 (env) C:\Users\Andrew\Desktop\gamefitness_website\GameFitness\src\gamefitnessweb>
 ```
 
-- install the nessecary dependancies
+- install the needed dependancies
 
 ```
 pip install -r requirements.txt
@@ -73,7 +73,7 @@ Quit the server with CTRL-BREAK.
 
 - Access the application from http://127.0.0.1:8000/homepage/
 
-- To close the application, stop the server by Ctrl+break or Ctrl+C
+- To close the application, use Ctrl+break or Ctrl+C to stop the server
 
 - Deactivate the virtual environment after you are done
 
@@ -81,7 +81,7 @@ Quit the server with CTRL-BREAK.
 deactivate
 ```
 
-***Running Tests***
+## Running Tests
 
 - navigate into the application folder 
 
@@ -99,7 +99,7 @@ Below is what should occur when you run the tests
 
 ***PUT TESTS SCREEN HERE ONCE ITS WORKING***
 
-***Coverage***
+## Coverage
 
 - navigate to the application folder
 
