@@ -9,56 +9,58 @@
 
 - navigate to the program root folder 
 
-'''
+```
 .\src\gamefitnessweb>
-'''
+```
 
 - install virtualenv
 
-'''
+```
 ###MacOS and Linux
 pip install --user virtualenv
 ###Windows
 pip install --user virtualenv
-'''
+```
 
 - create a virtual environment 
-'''
+
+```
 ###MacOS and Linux
 Python -m venv env
 ###Windows
 Python -m venv env
-'''
+```
 
 - Activate Virtual Environment
-'''
+
+```
 ###MacOS and Linux
 source env/bin/activate
 ###Windows
 .\env\Scripts\activate
-'''
+```
 
 You will know if you are in the virtual environment if you have (env) to the left of the directory like below:
 
-'''
+```
 (env) C:\Users\Andrew\Desktop\gamefitness_website\GameFitness\src\gamefitnessweb>
-'''
+```
 
 - install the nessecary dependancies
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 - Run the Django server
 
-'''
+```
 python manage.py runserver
-'''
+```
 
 If the server is running correctly, it should look like this:
 
-'''
+```
 Watching for file changes with StatReloader
 Performing system checks...
 
@@ -67,7 +69,7 @@ December 08, 2019 - 22:51:57
 Django version 2.2.6, using settings 'gamefitnessweb.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
-'''
+```
 
 - Access the application from http://127.0.0.1:8000/homepage/
 
@@ -75,23 +77,23 @@ Quit the server with CTRL-BREAK.
 
 - Deactivate the virtual environment after you are done
 
-'''
+```
 deactivate
-'''
+```
 
 ***Running Tests***
 
 - navigate into the application folder 
 
-'''
+```
 .\src\gamefitnessweb\gamefitnessweb>
-'''
+```
 
 - run pytest
 
-'''
+```
 pytest
-'''
+```
 
 Below is what should occur when you run the tests 
 
@@ -101,15 +103,15 @@ Below is what should occur when you run the tests
 
 - navigate to the application folder
 
-'''
+```
 .\src\gamefitnessweb\gamefitnessweb>
-'''
+```
 
 - test coverage 
 
-'''
+```
 pytest --cov=gamefitnessweb
-'''
+```
 
 The test coverage screen should look like this:
 
