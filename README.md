@@ -3,7 +3,6 @@
 
 - Python 3.7
 - Pip 19.2.3
-- Django 2.2
 
 ## running the application
 
