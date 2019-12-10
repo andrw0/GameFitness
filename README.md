@@ -82,10 +82,10 @@ deactivate
 
 ## Running Tests
 
-- navigate into the application folder 
+- navigate into the root folder 
 
 ```
-.\src\gamefitnessweb\gamefitnessweb>
+.\src\gamefitnessweb>
 ```
 
 - run pytest
@@ -96,14 +96,27 @@ pytest
 
 Below is what should occur when you run the tests 
 
-***PUT TESTS SCREEN HERE ONCE ITS WORKING***
+```
+=============================== test session starts ===============================
+platform win32 -- Python 3.7.5, pytest-5.2.2, py-1.8.0, pluggy-0.13.0
+Django settings: gamefitnessweb.settings (from ini file)
+rootdir: C:\Users\Andrew\Desktop\gamefitness_website\GameFitness\src\gamefitnessweb, inifile: pytest.ini
+plugins: cov-2.8.1, django-3.7.0
+collected 10 items
+
+gamefitnessweb\tests\test_models.py ..                                       [ 20%]
+gamefitnessweb\tests\test_views.py ....                                      [ 60%]
+gamefitnessweb\tests\test_urls.py ....                                       [100%]
+
+=============================== 10 passed in 1.47s ================================
+```
 
 ## Coverage
 
-- navigate to the application folder
+- navigate to the root folder
 
 ```
-.\src\gamefitnessweb\gamefitnessweb>
+.\src\gamefitnessweb>
 ```
 
 - test coverage 
@@ -114,8 +127,41 @@ pytest --cov=gamefitnessweb
 
 The test coverage screen should look like this:
 
-***PUT COVERAGE SCREEN HERE ONCE ITS WORKING***
+```
+=============================== test session starts ===============================
+platform win32 -- Python 3.7.5, pytest-5.2.2, py-1.8.0, pluggy-0.13.0
+Django settings: gamefitnessweb.settings (from ini file)
+rootdir: C:\Users\Andrew\Desktop\gamefitness_website\GameFitness\src\gamefitnessweb, inifile: pytest.ini
+plugins: cov-2.8.1, django-3.7.0
+collected 10 items
 
+gamefitnessweb\tests\test_models.py ..                                       [ 20%]
+gamefitnessweb\tests\test_views.py ....                                      [ 60%]
+gamefitnessweb\tests\test_urls.py ....                                       [100%]
+
+----------- coverage: platform win32, python 3.7.5-final-0 -----------
+Name                                        Stmts   Miss  Cover
+---------------------------------------------------------------
+gamefitnessweb\__init__.py                      0      0   100%
+gamefitnessweb\admin.py                        12      0   100%
+gamefitnessweb\apps.py                          1      1     0%
+gamefitnessweb\forms.py                        27      0   100%
+gamefitnessweb\migrations\0001_initial.py       9      0   100%
+gamefitnessweb\migrations\__init__.py           0      0   100%
+gamefitnessweb\models.py                       31      0   100%
+gamefitnessweb\settings.py                     19      0   100%
+gamefitnessweb\tests\test_models.py            11      0   100%
+gamefitnessweb\tests\test_urls.py              14      0   100%
+gamefitnessweb\tests\test_views.py             27      0   100%
+gamefitnessweb\urls.py                          7      0   100%
+gamefitnessweb\views.py                        44     14    68%
+gamefitnessweb\wsgi.py                          4      4     0%
+---------------------------------------------------------------
+TOTAL                                         206     19    91%
+
+
+=============================== 10 passed in 1.91s ================================
+```
 
 
 # What is Game Fitness?
