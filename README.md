@@ -93,7 +93,7 @@ deactivate
 python manage.py createsuperuser
 ```
 
-- go to http://localhost:8000/admin and type in the credentials you inputted when creating the superuser. Now you should have administrative status and can manage the users
+- go to http://localhost:8000/admin afer running the server and type in the credentials you inputted when creating the superuser. Now you should have administrative status and can manage the users
 
 ## Running Tests
 
