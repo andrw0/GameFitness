@@ -19,3 +19,4 @@ sqlparse==0.3.0
 text-unidecode==1.2
 wcwidth==0.1.7
 zipp==0.6.0
+django-widget-tweaks==1.4.5
