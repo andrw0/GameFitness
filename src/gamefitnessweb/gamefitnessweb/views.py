@@ -13,9 +13,11 @@ class showUserForm(FormView):
 
     def form_valid(self,form):
         form.save()
+        return HttpResponseRedirect("../accounts/profile")
 
     def form_invalid(self, form):
-        return HttpResponseRedirect('../homepage')
+        return self.render_to_response(self.get_context_data(request=self.request, form=form))
+        #return HttpResponseRedirect('../homepage')
 
 
     # def get(self, form):
@@ -88,4 +90,9 @@ def auth_view(request):
         auth.login(request, user)
         return HttpResponseRedirect('games.html')
     else:
+        return HttpResponseRedirect('homepage.html')
+
+def logout_view(request):
+    if request.method == "POST":
+        logout(request)
         return HttpResponseRedirect('homepage.html')
