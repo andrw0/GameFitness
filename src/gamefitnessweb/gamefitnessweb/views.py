@@ -13,6 +13,7 @@ class showUserForm(FormView):
 
     def form_valid(self,form):
         form.save()
+        return HttpResponseRedirect('../accounts/profile')
 
     def form_invalid(self, form):
         return HttpResponseRedirect('../homepage')
@@ -73,7 +74,7 @@ def showFeedbackForm(request):
         form = FeedbackForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('../')
+            return HttpResponseRedirect('../homepage/')
     else:
         form = FeedbackForm()
     return render(request, 'feedback.html', {'form': form})
