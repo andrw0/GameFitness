@@ -79,6 +79,21 @@ Quit the server with CTRL-BREAK.
 ```
 deactivate
 ```
+## creating an admin account
+
+- If you want to create an admin account, first nagivate to the root folder 
+
+```
+.\src\gamefitnessweb>
+```
+
+- type in the superuser command and fill out the required fields the same as you would when signing up for GameFitness
+
+```
+python manage.py createsuperuser
+```
+
+- go to http://localhost:8000/admin and type in the credentials you inputted when creating the superuser. Now you should have administrative status and can manage the users
 
 ## Running Tests
 
