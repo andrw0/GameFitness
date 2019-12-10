@@ -14,7 +14,7 @@ class UserChangeForm(UserChangeForm):
     # password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
         model = users
-        fields = ['username','first_name','last_name','email','height','weight','gender']
+        fields = ['username','email']
         exclude = ['game_id']
 
 
@@ -27,7 +27,7 @@ class GameForm(forms.ModelForm):
 class ExercisesForm(forms.ModelForm):
     class Meta:
         model = exercises
-        fields = ['game_id','bodypart','exercise_list','reps','video_link','body_part']
+        fields = ['game_id','bodypart','exercise_list','reps','video_link']
 
 class FeedbackForm(forms.ModelForm):
     class Meta:

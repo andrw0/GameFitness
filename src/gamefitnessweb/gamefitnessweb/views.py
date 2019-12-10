@@ -17,6 +17,7 @@ class showUserForm(FormView):
     def form_invalid(self, form):
         return HttpResponseRedirect('../homepage')
 
+
     # def get(self, form):
     # # if this is a POST request we need to process the form data
     #     if self.request.method == 'POST':
@@ -46,9 +47,10 @@ def showGameForm(request):
     return render(request, 'games.html', args)
 
 def showExercisesForm(request):
-    form = GameForm()
-    game = games.objects.values('game_id')
+    form = ExercisesForm()
+    game = games.objects.all()
     args = {'form':form, 'game':game}
+    return render(request, 'exercisesList.html', args)
     # # if this is a POST request we need to process the form data
     # if request.method == 'POST':
     #     # create a form instance and populate it with data from the request:
@@ -65,7 +67,6 @@ def showExercisesForm(request):
     # else:
     #     form = ExercisesForm()
 
-    return render(request, 'exercises.html', args)
 
 def showFeedbackForm(request):
     if request.method == 'POST':
