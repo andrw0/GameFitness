@@ -12,7 +12,7 @@ class users(AbstractUser):
     gender = models.CharField(choices=GENDER_CHOICES,max_length=50)
     GAME_CHOICES = (('Tennis','tennis'),('Golf','golf'),('Soccer','soccer'),('Basketball','basketball'),('Baseball','baseball'),('Football','football'),('Badminton','badminton'),('Volleyball','volleyball'))
     game_id = models.CharField(choices=GAME_CHOICES,max_length=200)
-
+    REQUIRED_FIELDS = ['height', 'email', 'weight']
 class games(models.Model):
     class Meta:
         db_table = "games"
