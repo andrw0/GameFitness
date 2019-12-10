@@ -75,7 +75,7 @@ def showFeedbackForm(request):
         form = FeedbackForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('../')
+            return HttpResponseRedirect('../homepage/')
     else:
         form = FeedbackForm()
     return render(request, 'feedback.html', {'form': form})
