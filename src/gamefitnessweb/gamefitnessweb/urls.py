@@ -30,6 +30,6 @@ urlpatterns = [
     path('exercisesList/',views.showExercisesForm, name='exercisesList'),
     path('homepage/',views.homepage, name='homepage'),
     path('feedback/', views.showFeedbackForm, name='feedback'),
-    url('login/', LoginView.as_view(template_name='login.html')),
-    url('logout/', LogoutView.as_view(template_name='logged_out.html')),
+    path('login/', LoginView.as_view(template_name='login.html'),name='login'),
+    path('logout/', LogoutView.as_view(template_name='logout.html'),name='logout'),
 ]

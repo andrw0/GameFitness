@@ -89,10 +89,10 @@
                   </div>
                 {% endfor %}
               {% else %}
-                {% render_field field class="form-control is-valid" %}
+                {% render_field field class="form-control is-valid"  %}
               {% endif %}
             {% else %}
-              {% render_field field class="form-control" %}
+              {% render_field field class="form-control" placeholder=field.label %}
             {% endif %}
 
             {% if field.help_text %}
