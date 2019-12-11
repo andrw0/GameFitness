@@ -25,7 +25,11 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
+<<<<<<< Updated upstream
       <a class="navbar-brand" href={% url 'homepage' %}>Game Fitness</a>
+=======
+      <a class="navbar-brand" href="{% url 'homepage' %}">Game Fitness</a>
+>>>>>>> Stashed changes
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,8 +40,8 @@
               Profile
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="signin.html">Register</a>
-              <a class="dropdown-item" href="login.html">Sign In</a>
+              <a class="dropdown-item" href="{% url 'signin' %}">Register</a>
+              <a class="dropdown-item" href="{% url 'login' %}">Sign In</a>
             </div>
           </li>
           <li class="nav-item">

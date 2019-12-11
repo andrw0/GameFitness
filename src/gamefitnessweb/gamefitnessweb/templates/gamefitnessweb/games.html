@@ -53,34 +53,26 @@
     </div>
   </nav>
 
-  <!-- Page Content -->
+<!-- Page Content -->
   <div class="container">
     <form action = "exercisesList.html" method="get">
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+      <!-- Game Section -->
+      <h2>Choose your Game</h2>
+       <div class="row">
+         {% for game in game %}
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'images/'{{game.game_id}}'.png' %}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">{{ game.game_id }}</a>
+                </h4>
+                <p class="card-text">{{ game.game_description }}</p>
+              </div>
             </div>
           </div>
-        </div>
-
-
-
-<table>
-    <tr>
-        <th>choose your game:</th>
-    </tr>
-    {% for game in game %}
-    <tr>
-        <td>{{ game.game_id }}
-        <input type="radio"></td>
-    </tr>
-    {% endfor %}
-</table>
-  <input type = "submit">
+        {% endfor %}
+       </div>
+      <input type = "submit">
+    </form>
 </form>
