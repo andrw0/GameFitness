@@ -1,3 +1,190 @@
+# How to run GameFitness
+## Environment requirements 
+
+- Python 3.7
+- Pip 19.2.3
+
+## running the application
+
+- navigate to the program root folder 
+
+```
+.\src\gamefitnessweb>
+```
+
+- install virtualenv
+
+```
+###MacOS and Linux
+pip install --user virtualenv
+###Windows
+pip install --user virtualenv
+```
+
+- create a virtual environment 
+
+```
+###MacOS and Linux
+Python -m venv env
+###Windows
+Python -m venv env
+```
+
+- Activate Virtual Environment
+
+```
+###MacOS and Linux
+source env/bin/activate
+###Windows
+.\env\Scripts\activate
+```
+
+You will know if you are in the virtual environment if you have (env) to the left of the directory like below:
+
+```
+(env) C:\Users\Andrew\Desktop\gamefitness_website\GameFitness\src\gamefitnessweb>
+```
+
+- install the needed dependancies
+
+```
+pip install -r requirements.txt
+```
+
+- Run the Django server
+
+```
+python manage.py runserver
+```
+
+If the server is running correctly, it should look like this:
+
+```
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 08, 2019 - 22:51:57
+Django version 2.2.6, using settings 'gamefitnessweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+```
+
+- Access the application from http://127.0.0.1:8000/homepage/
+
+- To close the application, use Ctrl+break or Ctrl+C to stop the server
+
+- Deactivate the virtual environment after you are done
+
+```
+deactivate
+```
+## creating an admin account
+
+- If you want to create an admin account, first nagivate to the root folder 
+
+```
+.\src\gamefitnessweb>
+```
+
+- type in the superuser command and fill out the required fields the same as you would when signing up for GameFitness
+
+```
+python manage.py createsuperuser
+```
+
+- go to http://localhost:8000/admin afer running the server and type in the credentials you inputted when creating the superuser. Now you should have administrative status and can manage the users
+
+## Running Tests
+
+- navigate into the root folder 
+
+```
+.\src\gamefitnessweb>
+```
+
+- run pytest
+
+```
+pytest
+```
+
+Below is what should occur when you run the tests 
+
+```
+=============================== test session starts ===============================
+platform win32 -- Python 3.7.5, pytest-5.2.2, py-1.8.0, pluggy-0.13.0
+Django settings: gamefitnessweb.settings (from ini file)
+rootdir: C:\Users\Andrew\Desktop\gamefitness_website\GameFitness\src\gamefitnessweb, inifile: pytest.ini
+plugins: cov-2.8.1, django-3.7.0
+collected 10 items
+
+gamefitnessweb\tests\test_models.py ..                                       [ 20%]
+gamefitnessweb\tests\test_views.py ....                                      [ 60%]
+gamefitnessweb\tests\test_urls.py ....                                       [100%]
+
+=============================== 10 passed in 1.47s ================================
+```
+
+## Coverage
+
+- navigate to the root folder
+
+```
+.\src\gamefitnessweb>
+```
+
+- test coverage 
+
+```
+pytest --cov=gamefitnessweb
+```
+
+The test coverage screen should look like this:
+
+```
+=============================== test session starts ===============================
+platform win32 -- Python 3.7.5, pytest-5.2.2, py-1.8.0, pluggy-0.13.0
+Django settings: gamefitnessweb.settings (from ini file)
+rootdir: C:\Users\Andrew\Desktop\gamefitness_website\GameFitness\src\gamefitnessweb, inifile: pytest.ini
+plugins: cov-2.8.1, django-3.7.0
+collected 10 items
+
+gamefitnessweb\tests\test_models.py ..                                       [ 20%]
+gamefitnessweb\tests\test_views.py ....                                      [ 60%]
+gamefitnessweb\tests\test_urls.py ....                                       [100%]
+
+----------- coverage: platform win32, python 3.7.5-final-0 -----------
+Name                                        Stmts   Miss  Cover
+---------------------------------------------------------------
+gamefitnessweb\__init__.py                      0      0   100%
+gamefitnessweb\admin.py                        12      0   100%
+gamefitnessweb\apps.py                          1      1     0%
+gamefitnessweb\forms.py                        27      0   100%
+gamefitnessweb\migrations\0001_initial.py       9      0   100%
+gamefitnessweb\migrations\__init__.py           0      0   100%
+gamefitnessweb\models.py                       31      0   100%
+gamefitnessweb\settings.py                     19      0   100%
+gamefitnessweb\tests\test_models.py            11      0   100%
+gamefitnessweb\tests\test_urls.py              14      0   100%
+gamefitnessweb\tests\test_views.py             27      0   100%
+gamefitnessweb\urls.py                          7      0   100%
+gamefitnessweb\views.py                        44     14    68%
+gamefitnessweb\wsgi.py                          4      4     0%
+---------------------------------------------------------------
+TOTAL                                         206     19    91%
+
+
+=============================== 10 passed in 1.91s ================================
+```
+
+## What did we learn about software development?
+- Things don't go as planned, with errors and setbacks arising at every step. Therefore, flexibility and a level demeanor are key to solivng problems and moving ahead with the project. 
+
+- Iterative development is useful in helping maintain the continual progress of a software development project. Without set iterations and milestones, it is easy to fall behind.
+
+- Each group member brings different strengths to the project, so initally it is advantagous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.  
+
 # What is Game Fitness?
  Application that recommends exercises based on sports activities to keep you healthy and ready for the game.
 
