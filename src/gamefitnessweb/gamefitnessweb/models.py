@@ -18,6 +18,7 @@ class games(models.Model):
         db_table = "games"
     GAME_CHOICES = (('Tennis','tennis'),('Golf','golf'),('Soccer','soccer'),('Basketball','basketball'),('Baseball','baseball'),('Football','football'),('Badminton','badminton'),('Volleyball','volleyball'))
     game_id = models.CharField(choices=GAME_CHOICES,max_length=50)
+    game_description = models.CharField(max_length=1000, default='')
 
 class exercises(models.Model):
     class Meta:
