@@ -1,8 +1,25 @@
-<!-- templates/registration/login.html -->
-<html>
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>logintest2</title>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GameFitness-Sign In</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+  <link href="{% static 'css/signin.css' %}" rel="stylesheet">
+
 </head>
+
 <body>
 
   <!-- Navigation -->
