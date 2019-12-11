@@ -79,6 +79,21 @@ Quit the server with CTRL-BREAK.
 ```
 deactivate
 ```
+## creating an admin account
+
+- If you want to create an admin account, first nagivate to the root folder 
+
+```
+.\src\gamefitnessweb>
+```
+
+- type in the superuser command and fill out the required fields the same as you would when signing up for GameFitness
+
+```
+python manage.py createsuperuser
+```
+
+- go to http://localhost:8000/admin afer running the server and type in the credentials you inputted when creating the superuser. Now you should have administrative status and can manage the users
 
 ## Running Tests
 
@@ -163,6 +178,12 @@ TOTAL                                         206     19    91%
 =============================== 10 passed in 1.91s ================================
 ```
 
+## What did we learn about software development?
+- Things don't go as planned, with errors and setbacks arising at every step. Therefore, flexibility and a level demeanor are key to solivng problems and moving ahead with the project. 
+
+- Iterative development is useful in helping maintain the continual progress of a software development project. Without set iterations and milestones, it is easy to fall behind.
+
+- Each group member brings different strengths to the project, so initally it is advantagous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.  
 
 # What is Game Fitness?
  Application that recommends exercises based on sports activities to keep you healthy and ready for the game.
