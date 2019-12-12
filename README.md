@@ -79,21 +79,6 @@ Quit the server with CTRL-BREAK.
 ```
 deactivate
 ```
-## creating an admin account
-
-- If you want to create an admin account, first nagivate to the root folder 
-
-```
-.\src\gamefitnessweb>
-```
-
-- type in the superuser command and fill out the required fields the same as you would when signing up for GameFitness
-
-```
-python manage.py createsuperuser
-```
-
-- go to http://localhost:8000/admin afer running the server and type in the credentials you inputted when creating the superuser. Now you should have administrative status and can manage the users
 
 ## Running Tests
 
@@ -179,11 +164,29 @@ TOTAL                                         206     19    91%
 ```
 
 ## What did we learn about software development?
-- Things don't go as planned, with errors and setbacks arising at every step. Therefore, flexibility and a level demeanor are key to solivng problems and moving ahead with the project. 
+
+- Things don't go as planned, with errors and setbacks arising at every step. Therefore, flexibility and a level demeanor are key to solving problems and moving ahead with the project.
 
 - Iterative development is useful in helping maintain the continual progress of a software development project. Without set iterations and milestones, it is easy to fall behind.
 
-- Each group member brings different strengths to the project, so initally it is advantagous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.  
+- Each group member brings different strengths to the project, so initially it is advantageous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.
+
+
+## Burndown Chart for Milestone 2
+
+- You can view our burndown chart here:
+
+https://docs.google.com/spreadsheets/d/1SnnpIKlNKqX9QRNbNsDdGtALHIMJ08jSjkO3Ry_KOWk/edit?usp=sharing
+
+## User Stories
+
+- As a sports enthusiast, I would want to be able to create a profile in the Game Fitness application so I can manage my profile and history
+
+- As the application owner, I want to make sure that there are minimal bugs in the program so that the user experience is the best it can be
+
+- As a application designer, I need to be able to create a database design to store information related to exercises and user profiles
+
+- As a user, I want to be able to choose a game and get a list of exercises so I remain injury free
 
 # What is Game Fitness?
  Application that recommends exercises based on sports activities to keep you healthy and ready for the game.
@@ -290,7 +293,7 @@ Issues identified
  Work for Milestone1 : 12 days
  
  
- ## [Burndown Chart](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340)
+ ## [Burndown Chart For Milestone 1](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340)
  
  A snapshot of the burndown can be seen below:
  
