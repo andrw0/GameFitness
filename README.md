@@ -172,7 +172,7 @@ TOTAL                                         206     19    91%
 - Each group member brings different strengths to the project, so initially it is advantageous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.
 
 
-## Burndown Chart
+## Burndown Chart for Milestone 2
 
 - You can view our burndown chart here:
 
@@ -293,7 +293,7 @@ Issues identified
  Work for Milestone1 : 12 days
  
  
- ## [Burndown Chart](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340)
+ ## [Burndown Chart For Milestone 1](https://app.zenhub.com/workspaces/gamefitness-5d9e317e1d8f2a00016ad9b7/reports/burndown?milestoneId=4737340)
  
  A snapshot of the burndown can be seen below:
  
