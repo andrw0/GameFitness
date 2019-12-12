@@ -131,3 +131,5 @@ USE_TZ = True
 AUTH_USER_MODEL = 'gamefitnessweb.users'
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL= '/games'

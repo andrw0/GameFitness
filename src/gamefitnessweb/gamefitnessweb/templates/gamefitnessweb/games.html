@@ -1,3 +1,4 @@
+{% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +18,8 @@
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-
-  <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+  <link href="{% static 'css/CardButtonLayout.css' %}" rel="stylesheet">
+  <!-- <link href="{% static 'css/modern-business.css' %}" rel="stylesheet"> -->
 
 </head>
 
@@ -55,24 +56,31 @@
 
 <!-- Page Content -->
   <div class="container">
-    <form action = "exercisesList.html" method="get">
-      <!-- Game Section -->
+    <form action = "/exercisesList" method="POST" >
+    {% csrf_token %}
+    <!-- Game Section -->
       <h2>Choose your Game</h2>
-       <div class="row">
-         {% for game in game %}
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="{% static 'images/'{{game.game_id}}'.png' %}" alt=""></a>
+        <div class="row">
+         {% for individualGame in game %}
+         <label>
+          <input type="radio" name="game_id" class="card-input-element d-none" id="game_id" value={{ individualGame.game_id }}>
+           <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
+             <h4 class="card-title">{{ individualGame.game_id }} </h4>
+             <!--<p class="card-text">{{ individualGame.game_description }}</p> -->
+           </div>
+          </label>
+          <!-- <div class="col-lg-4 col-sm-6 portfolio-item">
+             <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'images/{{ individualGame.game_id }}.png' %}" alt=""> </img></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">{{ game.game_id }}</a>
+                  <a href="#">{{ individualGame.game_id }}</a>
                 </h4>
-                <p class="card-text">{{ game.game_description }}</p>
+                <p class="card-text">{{ individualGame.game_description }}</p>
               </div>
-            </div>
-          </div>
+            </div> -->
         {% endfor %}
        </div>
-      <input type = "submit">
+      <input type = "submit" value="Get Exercises">
     </form>
-</form>
+</div>

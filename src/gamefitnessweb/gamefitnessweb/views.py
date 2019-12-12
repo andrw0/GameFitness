@@ -13,7 +13,7 @@ class showUserForm(FormView):
 
     def form_valid(self,form):
         form.save()
-        return HttpResponseRedirect("../accounts/profile")
+        return HttpResponseRedirect("../games")
 
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(request=self.request, form=form))
@@ -49,9 +49,10 @@ def showGameForm(request):
     return render(request, 'games.html', args)
 
 def showExercisesForm(request):
+    gameid = request.POST.get("game_id")
     form = ExercisesForm()
-    game = games.objects.all()
-    args = {'form':form, 'game':game}
+    allexerciseList = exercises.objects.all()
+    args = {'form':form, 'exercisesList':allexerciseList, 'game_id':gameid}
     return render(request, 'exercisesList.html', args)
     # # if this is a POST request we need to process the form data
     # if request.method == 'POST':
