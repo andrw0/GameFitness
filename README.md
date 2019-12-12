@@ -185,6 +185,20 @@ TOTAL                                         206     19    91%
 
 - Each group member brings different strengths to the project, so initally it is advantagous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.  
 
+## Burndown Chart
+
+- You can view our burndown chart here:
+
+https://docs.google.com/spreadsheets/d/1SnnpIKlNKqX9QRNbNsDdGtALHIMJ08jSjkO3Ry_KOWk/edit?usp=sharing
+
+## User Stories
+
+- As a user, I want to be able to record how I feel after the workout to help me see how my progress is going
+- As a sports enthusiast, I would want to be able to create a profile in the Game Fitness application so I can manage my profile and history
+- As the application owner, I want to make sure that there are minimal bugs in the program so that the user experience is the best it can be
+- As a developer, I want to make a sign up and login system to allow users to create accounts and be able to sign in in the future
+- As a application designer, I need to be able to create a database design to store information related to exercises and user profiles
+
 # What is Game Fitness?
  Application that recommends exercises based on sports activities to keep you healthy and ready for the game.
 
