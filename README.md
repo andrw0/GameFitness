@@ -193,10 +193,13 @@ https://docs.google.com/spreadsheets/d/1SnnpIKlNKqX9QRNbNsDdGtALHIMJ08jSjkO3Ry_K
 
 ## User Stories
 
-- As a user, I want to be able to record how I feel after the workout to help me see how my progress is going
 - As a sports enthusiast, I would want to be able to create a profile in the Game Fitness application so I can manage my profile and history
+
 - As the application owner, I want to make sure that there are minimal bugs in the program so that the user experience is the best it can be
+
 - As a application designer, I need to be able to create a database design to store information related to exercises and user profiles
+
+- As a user, I want to be able to choose a game and get a list of exercises so I remain injury free
 
 # What is Game Fitness?
  Application that recommends exercises based on sports activities to keep you healthy and ready for the game.
