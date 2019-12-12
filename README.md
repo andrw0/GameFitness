@@ -179,11 +179,13 @@ TOTAL                                         206     19    91%
 ```
 
 ## What did we learn about software development?
-- Things don't go as planned, with errors and setbacks arising at every step. Therefore, flexibility and a level demeanor are key to solivng problems and moving ahead with the project. 
+
+- Things don't go as planned, with errors and setbacks arising at every step. Therefore, flexibility and a level demeanor are key to solving problems and moving ahead with the project.
 
 - Iterative development is useful in helping maintain the continual progress of a software development project. Without set iterations and milestones, it is easy to fall behind.
 
-- Each group member brings different strengths to the project, so initally it is advantagous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.  
+- Each group member brings different strengths to the project, so initially it is advantageous for teams to have roles tailored to each group member. However, the team and its members need to be flexible and break from their roles when needed to ensure the project's completion.
+
 
 ## Burndown Chart
 
