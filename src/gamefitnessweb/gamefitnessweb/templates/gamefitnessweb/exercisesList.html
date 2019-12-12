@@ -72,25 +72,33 @@
   {% for exercise in exercisesList %}
    {% if exercise.game_id != game_id %}
     <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text" >
-              <input type="checkbox" aria-label="Checkbox for Exercise"/>
+     <div class="input-group">
+      <table>
+        <tr>
+          <td>
+            <div class="input-group-prepend">
+              <div class="input-group-text" >
+                <input type="checkbox" aria-label="Checkbox for Exercise"/>
+              </div>
             </div>
-          </div>
-          <table width= "100%">
-            <tr>
-              <td>
-                <a href="{{ exercise.video_link }}" >{{ exercise.exercise_list }}</a>
-              </td>
-              <td>
-                <input type="label" value ="{{ exercise.bodypart }}" class="form-control">
-              </td>
-              <td>
-                <input type="label" value ="{{ exercise.reps }}" class="form-control" >
-              </td>
-            </tr>
-          </table>
+          </td>
+          <td>
+            <table width= "150%">
+              <tr>
+                <td >
+                  <a href="{{ exercise.video_link }}" >{{ exercise.exercise_list }}</a>
+                </td>
+                <td>
+                  <input type="label" value ="{{ exercise.bodypart }}" class="form-control">
+                </td>
+                <td>
+                  <input type="label" value ="{{ exercise.reps }}" class="form-control" >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
         </div>
       </div>
    {% endif %}
