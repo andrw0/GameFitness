@@ -67,7 +67,7 @@
       <li class="breadcrumb-item active">Exercises</li>
     </ol>
 
-<form method="post" novalidate>
+<form method="post" novalidate action="/homepage/">
   {% csrf_token %}
   {% for exercise in exercisesList %}
    {% if exercise.game_id != game_id %}
