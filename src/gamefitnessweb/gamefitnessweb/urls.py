@@ -33,4 +33,6 @@ urlpatterns = [
     path('feedback/', views.showFeedbackForm, name='feedback'),
     path('login/', LoginView.as_view(template_name='login.html'),name='login'),
     path('logout/', LogoutView.as_view(template_name='logout.html'),name='logout'),
+    path('contactus/',views.contactus,name='contactus'),
+    path('about/',views.about,name='about'),
 ]

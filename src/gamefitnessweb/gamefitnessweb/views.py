@@ -42,6 +42,12 @@ class showUserForm(FormView):
 def homepage(request):
     return render(request,'homepage.html')
 
+def contactus(request):
+    return render(request,'contact.html')
+
+def about(request):
+    return render(request,'about.html')
+
 def showGameForm(request):
     form = GameForm()
     gameValues = games.objects.all().values('id','game_id','game_description')
