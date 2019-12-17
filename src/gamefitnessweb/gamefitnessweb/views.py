@@ -44,16 +44,19 @@ def homepage(request):
 
 def showGameForm(request):
     form = GameForm()
-    game = games.objects.all()
-    args = {'form': form, 'game':game}
+    gameValues = games.objects.all().values('id','game_id','game_description')
+    args = {'form': form, 'game':gameValues}
     return render(request, 'games.html', args)
 
 def showExercisesForm(request):
-    gameid = request.POST.get("game_id")
-    form = ExercisesForm()
-    allexerciseList = exercises.objects.all()
-    args = {'form':form, 'exercisesList':allexerciseList, 'game_id':gameid}
-    return render(request, 'exercisesList.html', args)
+    if(request.method == "POST"):
+        form = ExercisesForm(request.POST)
+        gameid = request.POST.get("game_id")
+        allexerciseList = exercises.objects.filter(game_id=gameid)
+        args = {'form':form, 'exercisesList':allexerciseList, 'game_id':gameid}
+        return render(request, 'exercisesList.html', args)
+    else:
+        form = ExercisesForm()
     # # if this is a POST request we need to process the form data
     # if request.method == 'POST':
     #     # create a form instance and populate it with data from the request:

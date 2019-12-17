@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Game Fitness</a>
+      <a class="navbar-brand" href="{% url 'homepage' %}">Game Fitness</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,17 +56,30 @@
 
 <!-- Page Content -->
   <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Exercises</h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{% url 'homepage' %}">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Games</li>
+    </ol>
+
     <form action = "/exercisesList" method="POST" >
     {% csrf_token %}
     <!-- Game Section -->
       <h2>Choose your Game</h2>
-        <div class="row">
+        <div class="card" style="border:1px;width: 120rem;">
          {% for individualGame in game %}
-         <label>
-          <input type="radio" name="game_id" class="card-input-element d-none" id="game_id" value={{ individualGame.game_id }}>
+         <label class="list-group-item">
+          <input type="radio" name="game_id" class="card-input-element d-none" id="game_id" value={{ individualGame.id }}>
            <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
              <h4 class="card-title">{{ individualGame.game_id }} </h4>
-             <!--<p class="card-text">{{ individualGame.game_description }}</p> -->
+             <!--  <div class="card-body">
+               <p class="card-text">{{ individualGame.game_description }}</p>
+             </div> -->
            </div>
           </label>
           <!-- <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -80,7 +93,27 @@
               </div>
             </div> -->
         {% endfor %}
-       </div>
-      <input type = "submit" value="Get Exercises">
+      </div><br><br>
+        <input type = "submit" class="btn btn-primary" value="Get Exercises">
+        <br><br>
     </form>
 </div>
+
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Game Fitness 2019</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

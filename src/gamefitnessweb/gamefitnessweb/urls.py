@@ -29,6 +29,7 @@ urlpatterns = [
     path('games/',views.showGameForm, name='games'),
     path('exercisesList',views.showExercisesForm, name='exercisesList'),
     path('homepage/',views.homepage, name='homepage'),
+    path('',views.homepage),
     path('feedback/', views.showFeedbackForm, name='feedback'),
     path('login/', LoginView.as_view(template_name='login.html'),name='login'),
     path('logout/', LogoutView.as_view(template_name='logout.html'),name='logout'),

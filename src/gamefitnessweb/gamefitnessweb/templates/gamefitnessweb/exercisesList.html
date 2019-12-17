@@ -66,11 +66,10 @@
       </li>
       <li class="breadcrumb-item active">Exercises</li>
     </ol>
- 
+
 <form method="post" novalidate action="/homepage/">
   {% csrf_token %}
   {% for exercise in exercisesList %}
-   {% if exercise.game_id != game_id %}
     <div class="form-group">
      <div class="input-group">
       <table>
@@ -101,7 +100,6 @@
       </table>
         </div>
       </div>
-   {% endif %}
   {% endfor %}
 
    <button type="submit" class="btn btn-primary">Submit</button>
