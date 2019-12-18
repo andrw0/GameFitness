@@ -23,7 +23,7 @@ class games(models.Model):
 class exercises(models.Model):
     class Meta:
         db_table = "exercises"
-    game_id = models.DecimalField(max_digits=1,decimal_places=0)
+    game_id = models.ForeignKey(games, on_delete=models.CASCADE)
     INJURY_LIST = (('shoulder, back, knee', "tennis"), ('elbow, wrist, shoulder, lumbar', 'golf'), ('ankle, knee', 'soccer'), ('ankle, knee', 'basketball'), ('knee, shoulder', 'baseball'), ('knee, ankle', 'badminton'), ('ankle, shoulder, back', 'volleyball'))
     bodypart = models.CharField(choices=INJURY_LIST, max_length=50)
     exercise_list = models.CharField(max_length=300)
