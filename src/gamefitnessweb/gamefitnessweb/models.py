@@ -23,13 +23,12 @@ class games(models.Model):
 class exercises(models.Model):
     class Meta:
         db_table = "exercises"
-    game_id = models.ForeignKey(games, on_delete=models.CASCADE)
+    game_id_id = models.ForeignKey(games,to_field="id",db_column="game_id_id",on_delete=models.CASCADE)
     INJURY_LIST = (('shoulder, back, knee', "tennis"), ('elbow, wrist, shoulder, lumbar', 'golf'), ('ankle, knee', 'soccer'), ('ankle, knee', 'basketball'), ('knee, shoulder', 'baseball'), ('knee, ankle', 'badminton'), ('ankle, shoulder, back', 'volleyball'))
     bodypart = models.CharField(choices=INJURY_LIST, max_length=50)
     exercise_list = models.CharField(max_length=300)
     reps = models.CharField(max_length=300)
     video_link = models.CharField(max_length=500)
-    body_part = models.CharField(max_length=50)
 
 class feedback(models.Model):
     class Meta:

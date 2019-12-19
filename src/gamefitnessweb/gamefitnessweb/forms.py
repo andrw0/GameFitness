@@ -27,7 +27,7 @@ class GameForm(forms.ModelForm):
 class ExercisesForm(forms.ModelForm):
     class Meta:
         model = exercises
-        fields = ['game_id','bodypart','exercise_list','reps','video_link']
+        fields = ['game_id_id','bodypart','exercise_list','reps','video_link']
 
 class FeedbackForm(forms.ModelForm):
     class Meta:

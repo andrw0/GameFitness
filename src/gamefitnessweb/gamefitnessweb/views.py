@@ -58,14 +58,14 @@ def showExercisesForm(request):
     if(request.method == "POST"):
         form = ExercisesForm(request.POST)
         gameid = request.POST.get("game_id")
-        allexerciseList = exercises.objects.filter(game_id=gameid)
+        allexerciseList = exercises.objects.filter(game_id_id=gameid)
         args = {'form':form, 'exercisesList':allexerciseList, 'game_id':gameid}
         return render(request, 'exercisesList.html', args)
     else:
         form = ExercisesForm()
     # # if this is a POST request we need to process the form data
     # if request.method == 'POST':
-    #     # create a form instance and populate it with data from the request:
+    #     # create a form instance and popuplate it with data from the request:
     #     form = ExercisesForm(request.POST)
     #     # check whether it's valid:
     #     if form.is_valid():
