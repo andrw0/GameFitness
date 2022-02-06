@@ -210,7 +210,7 @@ This is a progressive team and we collaborate distributively using Git issues as
 # Project StakeHolder(s)
 
 - Professor Wallace Chipidza
-- Atheletes, Sports Enthusiast
+- Athletes, Sports Enthusiast
  
 # Project Requirements
 
